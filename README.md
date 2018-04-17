@@ -1,5 +1,5 @@
 # mfpAdapterTester
-This will be a web app that will act like Postman which aim to test secured IBM Mobilefirst adapters with custom authentication specially that save and use data within active session as Postman basic authentication debugging detailed in MFP docs won't fit.
+This will be a web app that will act like Postman which aim to test secured IBM Mobilefirst 8 adapters with custom authentication specially that save and use data within active session as Postman basic authentication debugging detailed in MFP docs won't fit.
 
 The Web app will have the following features:<br />
 1- Enable you to make custom login by adding your security scope name and login parameters.<br />
