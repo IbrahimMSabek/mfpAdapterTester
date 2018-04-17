@@ -1,0 +1,15 @@
+<div class="login" data-ng-init="init()">
+    <div class="container">
+        <!-- <label>{{ 'parameters' | translate }}</label> -->
+        <input placeholder="{{ 'adapterName' | translate }}" ng-model="adapterName"/>
+        <input placeholder="{{ 'procedureName' | translate }}" ng-model="procedureName"/>
+        <input placeholder="{{ 'methodType' | translate }}" ng-model="methodType"/>
+        <input placeholder="{{ 'consume' | translate }}" ng-model="consumeType"/>
+        <div ng-repeat="param in parameters">
+            <input placeholder="{{ 'key' | translate }}" ng-model="param.key" class="parametersKey"/>
+            <input placeholder="{{ 'value' | translate }}" ng-model="param.value" class="parametersValue"/>
+        </div>
+        <button class="button button-assertive" ng-click="addParameter()">{{ 'addParam' | translate }}</button>
+        <button class="button button-positive" ng-click="save()">{{ 'save' | translate }}</button>
+    </div>
+</div>

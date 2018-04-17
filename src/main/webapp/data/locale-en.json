@@ -1,0 +1,18 @@
+{
+    "parameters" : "Parameters",
+    "key" : "Key",
+    "value" : "Value",
+    "addParam" : "Add Parameter",
+    "login" : "Login",
+    "scope" : "Security Scope",
+    "save" : "Save",
+
+    "requestAddedSuccessfully" : "Request Added Successfully!",
+    "methodType" : "Method Type",
+    "addRequest" : "Add Request",
+    "runAll" : "Run All",
+    "export" : "Export Run",
+    "adapterName" : "Adapter Name",
+    "procedureName" : "Procedure Name",
+    "exportCollection" : "Export Collection"
+}

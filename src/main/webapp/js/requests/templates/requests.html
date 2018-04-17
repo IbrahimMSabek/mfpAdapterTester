@@ -1,0 +1,28 @@
+<div class="requets" data-ng-init="init()">
+    <div class="container">
+        <div class="list">
+            <div class="item item-button-right" ng-repeat="request in requests">
+                {{request.adapterName}}, {{request.procedureName}}, {{request.methodType}}
+                <div class="buttons">
+                    <button class="button button-positive" ng-click="edit($index)">
+                       <i class="icon ion-edit"></i>
+                    </button>
+                       
+                    <button class="button button-balanced" ng-click="run($index)">
+                        <i class="icon ion-play"></i>
+                    </button>
+
+                    <button class="button button-assertive" ng-click="delete($index)">
+                        <i class="icon ion-trash-a"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <button class="button button-positive" ng-click="addRequest()">{{ 'addRequest' | translate }}</button>
+        <button class="button button-balanced" ng-click="runAll()" ng-disabled="isRequestsEmpty">{{ 'runAll' | translate }}</button>
+        <a class="button button-assertive" id="export" ng-disabled="!isRundone">{{ 'export' | translate }}</a>
+        <a class="button button-assertive" id="exportCol" ng-disabled="isRequestsEmpty">{{ 'exportCollection' | translate }}</a>
+
+        <!-- <a id="export" href=""></a> -->
+    </div>
+</div>

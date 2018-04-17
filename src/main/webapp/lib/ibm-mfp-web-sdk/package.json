@@ -1,0 +1,91 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "ibm-mfp-web-sdk",
+        "scope": null,
+        "escapedName": "ibm-mfp-web-sdk",
+        "name": "ibm-mfp-web-sdk",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "E:\\mfp"
+    ]
+  ],
+  "_from": "ibm-mfp-web-sdk@latest",
+  "_id": "ibm-mfp-web-sdk@8.0.2017112205",
+  "_inCache": true,
+  "_location": "/ibm-mfp-web-sdk",
+  "_nodeVersion": "7.10.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/ibm-mfp-web-sdk-8.0.2017112205.tgz_1511941038640_0.05261845048516989"
+  },
+  "_npmUser": {
+    "name": "ibmmfpf",
+    "email": "ibmmfpf@us.ibm.com"
+  },
+  "_npmVersion": "4.5.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "ibm-mfp-web-sdk",
+    "scope": null,
+    "escapedName": "ibm-mfp-web-sdk",
+    "name": "ibm-mfp-web-sdk",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/ibm-mfp-web-sdk/-/ibm-mfp-web-sdk-8.0.2017112205.tgz",
+  "_shasum": "5104f3d140245f448fa20f87e0013ad6634e0ecc",
+  "_shrinkwrap": null,
+  "_spec": "ibm-mfp-web-sdk",
+  "_where": "E:\\mfp",
+  "author": {
+    "name": "IBM"
+  },
+  "dependencies": {
+    "jssha": "2.2.0",
+    "promiz": "1.0.5",
+    "sjcl": "1.0.3"
+  },
+  "description": "IBM MobileFirst Platform Foundation Web Environment SDK",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "5104f3d140245f448fa20f87e0013ad6634e0ecc",
+    "tarball": "https://registry.npmjs.org/ibm-mfp-web-sdk/-/ibm-mfp-web-sdk-8.0.2017112205.tgz"
+  },
+  "homepage": "https://git.ng.bluemix.net/ibmmfpf/ibm-mfp-web-sdk",
+  "keywords": [
+    "ibm",
+    "worklight",
+    "mobilefirst",
+    "mfp",
+    "web sdk",
+    "cordova-web"
+  ],
+  "license": "SEE LICENSE IN LICENSE.TXT",
+  "main": "ibmmfpf.js",
+  "maintainers": [
+    {
+      "name": "ibmmfpf",
+      "email": "ibmmfpf@us.ibm.com"
+    }
+  ],
+  "name": "ibm-mfp-web-sdk",
+  "optionalDependencies": {},
+  "readme": "\n## Core Web-sdk\n\nLearn how to integrate the MobileFirst Foundation Web SDK in a web application [here](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/adding-the-mfpf-sdk/web/)\n\n## Analytics Web-sdk\n\n  By default ibmmfpfanalytics is enabled, meaning data is passed to the ibmmfpfanalytics. You can explicitly enable or disable persistent data capture by calling ibmmfpfanalytics.enable\n  or ibmmfpfanalytics.disable.\n \n  Note: The data collected via the ibmmfpfanalytics API and sent to the IBM MobileFirst server, is then available in the Operational\n  Analytics engine console (Apps -> Client Log Search).\n  The IBM MobileFirst ibmmfpfanalytics API provides the ability to enable, disable, and log custom events to analytics and send it to the server.\n \n  The IBM MobileFirst ibmmfpfanalytics was coded using the UMD pattern for javascript. This means it can be used as a separate module or used under the global context.  \n  \n  Following are examples of integrating the IBM MobileFirst ibmmfpfanalytics as a module, using 'define', and an example of integrating the IBM MobileFirst ibmmfpfanalytics on the global context.\n  \n  Example usage as module, using 'define':\n  -----------------------------------\n  define([\n  \t'ibmmfpfanalytics'\n  ], function(ibmmfpfanalytics){\n  \tibmmfpfanalytics.send();  \n  }\n  );\n  \n  \n  Example usage on global context:\n  -----------------------------------\n  <script src=\"ibmmfpfanalytics.js\"></script>\n  <script>\n  \tibmmfpfanalytics.send();\n  </script>\n\n  ",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://git.ng.bluemix.net/ibmmfpf/ibm-mfp-web-sdk/tree/master"
+  },
+  "scripts": {},
+  "typings": "./lib/typings/ibmmfpf.d.ts",
+  "version": "8.0.2017112205"
+}
