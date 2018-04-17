@@ -6,7 +6,9 @@
             <input placeholder="{{ 'key' | translate }}" ng-model="param.key" class="parametersKey"/>
             <input placeholder="{{ 'value' | translate }}" ng-model="param.value" class="parametersValue"/>
         </div>
-        <button class="button button-assertive" ng-click="addParameter()">{{ 'addParam' | translate }}</button>
+        <textarea ng-model="data.parametersJson" ng-if="isJsonParameters"></textarea>
+        <button class="button button-assertive" ng-click="addParameter()" ng-disabled="isJsonParameters">{{ 'addParam' | translate }}</button>
+        <button class="button button-assertive" ng-click="addJsonParameter()" ng-disabled="isParamsSelected">{{ 'addJsonParam' | translate }}</button>
         <button class="button button-positive" ng-click="login()">{{ 'login' | translate }}</button>
     </div>
 </div>

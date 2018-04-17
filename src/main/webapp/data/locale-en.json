@@ -3,6 +3,7 @@
     "key" : "Key",
     "value" : "Value",
     "addParam" : "Add Parameter",
+    "addJsonParam" : "Add Parameters as JSON",
     "login" : "Login",
     "scope" : "Security Scope",
     "save" : "Save",

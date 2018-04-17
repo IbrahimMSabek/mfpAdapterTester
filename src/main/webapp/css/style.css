@@ -34,10 +34,20 @@ html, body{
     margin-top: 10px;
 }
 
+.login .container textarea{
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 70%;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
 .login .container button{
-    width: 49%;
+    width: 75%;
     margin: 0 auto;
     margin-top: 5px;
+    display: block;
 }
 
 .parametersKey{
