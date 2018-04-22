@@ -10,7 +10,10 @@ Requests.service("requestsUtility",function($http,CONSTANTS,GENERIC_UTILITIES){
         if ((method == WLResourceRequest.POST || method == WLResourceRequest.PUT) && invocationData.consumeType.toLowerCase() != "json") {
             resourceRequest.sendFormParameters(parameters).then(function (data) {
                 console.log("Success Call Adpater : ", invocationData, data.responseJSON);
-                successCallBack(data,index);
+                var res = {
+                    invocationResult: data.responseJSON
+                }
+                successCallBack(res,index);
             }, function (response) {
                 console.log("Failed Call Adpater : ", invocationData, response);
                 failureCallBack(response,index);
@@ -21,7 +24,10 @@ Requests.service("requestsUtility",function($http,CONSTANTS,GENERIC_UTILITIES){
             }
             resourceRequest.send(method == WLResourceRequest.GET ? null : parameters).then(function (data) {
                 console.log("Success Call Adpater : ", invocationData, data.responseJSON);
-                successCallBack(data,index);
+                var res = {
+                    invocationResult: data.responseJSON
+                }
+                successCallBack(res,index);
             }, function (response) {
                 console.log("Failed Call Adpater : ", invocationData, response);
                 failureCallBack(response,index);
