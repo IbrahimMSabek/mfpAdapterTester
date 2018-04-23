@@ -84,7 +84,7 @@ Requests.controller('addRequestController',function($scope,$state,$ionicLoading,
 
         var requestsCollection = localStorage.getItem("requests") != null ? JSON.parse(localStorage.getItem("requests")) : [];
         if ($state.params.index) {
-            requestsCollection.splice(index,1,requestParameters);
+            requestsCollection.splice($state.params.index,1,requestParameters);
         }else{
             requestsCollection.push(requestParameters);
         }
