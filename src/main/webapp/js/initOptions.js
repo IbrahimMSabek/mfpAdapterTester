@@ -5,8 +5,8 @@ var Messages = {
 };
 
 var wlInitOptions = {
-    mfpContextRoot : '/mfp', // "mfp" // QIIBOCDEV / QIIBOCUAT //QIIBOCPROD is the default context root in the MobileFirst Foundation
-    applicationId : 'qiib' // Replace with your own value.
+    mfpContextRoot : '', // Replace with your own value.
+    applicationId : '' // Replace with your own value.
 };
 //console.log = function(){}
 // Called automatically after MFP fram0ework initialization by WL.Client.init(wlInitOptions).
